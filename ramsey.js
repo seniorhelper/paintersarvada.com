@@ -8,11 +8,11 @@
     return '<svg class="' + (extra || '') + '" viewBox="0 0 260 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ramsey, the Bighorn Painting ram">' +
       '<defs><linearGradient id="rmCoat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a1856a"/><stop offset="1" stop-color="#7d6450"/></linearGradient>' +
       '<linearGradient id="rmHorn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e4d4b4"/><stop offset="1" stop-color="#b59a73"/></linearGradient>' +
-      '<linearGradient id="rmCap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2e5a39"/><stop offset="1" stop-color="#132a19"/></linearGradient></defs>' +
+      '<linearGradient id="rmCap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#243039"/><stop offset="1" stop-color="#132a19"/></linearGradient></defs>' +
       /* paint can */
       '<path d="M16 216 h56 l-6 68 h-44z" fill="#dfe3e8" stroke="#b9bdc2" stroke-width="3"/>' +
       '<rect x="14" y="208" width="60" height="11" rx="4" fill="#b9bdc2"/>' +
-      '<rect x="26" y="234" width="36" height="18" rx="4" fill="#2e5a39"/>' +
+      '<rect x="26" y="234" width="36" height="18" rx="4" fill="#243039"/>' +
       '<text x="44" y="247" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#fff" text-anchor="middle">PAINT</text>' +
       /* body */
       '<ellipse cx="150" cy="232" rx="58" ry="46" fill="url(#rmCoat)"/>' +
@@ -32,15 +32,15 @@
       '<circle cx="166" cy="148" r="6" fill="#2b2118"/><circle cx="168" cy="146" r="2" fill="#fff"/>' +
       /* painter cap between the horns */
       '<path d="M110 124 a42 30 0 0 1 80 0z" fill="url(#rmCap)"/>' +
-      '<path d="M184 120 h26 a6 6 0 0 1 0 13 h-26z" fill="#2e5a39"/>' +
-      '<rect x="126" y="108" width="48" height="15" rx="4" fill="#d9a441"/>' +
+      '<path d="M184 120 h26 a6 6 0 0 1 0 13 h-26z" fill="#243039"/>' +
+      '<rect x="126" y="108" width="48" height="15" rx="4" fill="#f3c48a"/>' +
       '<text x="150" y="120" font-family="Arial,Helvetica,sans-serif" font-size="9" font-weight="bold" fill="#132a19" text-anchor="middle">BIGHORN</text>' +
       /* brush */
       '<rect x="198" y="230" width="10" height="56" rx="5" fill="#c98b3a" transform="rotate(12 203 258)"/>' +
       '<rect x="192" y="280" width="22" height="13" rx="3" fill="#b9bdc2" transform="rotate(12 203 286)"/>' +
-      '<rect x="190" y="290" width="25" height="18" rx="3" fill="#2e5a39" transform="rotate(12 203 298)"/>' +
+      '<rect x="190" y="290" width="25" height="18" rx="3" fill="#243039" transform="rotate(12 203 298)"/>' +
       /* mountain mark */
-      '<g class="rm-steam" fill="none" stroke="#d9a441" stroke-width="5" stroke-linecap="round">' +
+      '<g class="rm-steam" fill="none" stroke="#f3c48a" stroke-width="5" stroke-linecap="round">' +
       '<path d="M222 118 q10 -14 8 -30"/><path d="M238 128 q14 -18 12 -40"/></g>' +
       '</svg>';
   }
@@ -63,16 +63,16 @@
     '@keyframes rmled{0%,100%{opacity:1}50%{opacity:.35}}',
     '.rm-cord{stroke-dasharray:6 10;animation:rmcord 2.4s linear infinite}',
     '@keyframes rmcord{to{stroke-dashoffset:-32}}',
-    '.rm-tip{background:#fff;color:#122033;border:2px solid #0a4fae;border-radius:14px 14px 4px 14px;padding:10px 30px 10px 13px;font:700 .92rem/1.3 Inter,system-ui,sans-serif;max-width:238px;box-shadow:0 10px 26px rgba(7,51,111,.2);position:relative;margin-right:22px;cursor:pointer}',
+    '.rm-tip{background:#fff;color:#161e24;border:2px solid #243039;border-radius:14px 14px 4px 14px;padding:10px 30px 10px 13px;font:700 .92rem/1.3 Inter,system-ui,sans-serif;max-width:238px;box-shadow:0 10px 26px rgba(7,51,111,.2);position:relative;margin-right:22px;cursor:pointer}',
     '.rm-tip button{position:absolute;top:3px;right:5px;border:0;background:none;font-size:1.05rem;color:#5d6b7e;cursor:pointer;line-height:1}',
     '.rm-dock{position:fixed;right:0;top:44%;transform:translateY(-50%);z-index:975;display:flex;flex-direction:column;gap:8px;align-items:flex-end}',
-    '.rm-dock button{display:flex;align-items:center;gap:9px;background:#07336f;color:#fff;border:0;border-radius:12px 0 0 12px;padding:12px 14px 12px 12px;font:700 .86rem Inter,system-ui,sans-serif;cursor:pointer;box-shadow:-4px 6px 18px rgba(7,51,111,.26)}',
-    '.rm-dock button.alt{background:#ef6c12}',
+    '.rm-dock button{display:flex;align-items:center;gap:9px;background:#161e24;color:#fff;border:0;border-radius:12px 0 0 12px;padding:12px 14px 12px 12px;font:700 .86rem Inter,system-ui,sans-serif;cursor:pointer;box-shadow:-4px 6px 18px rgba(7,51,111,.26)}',
+    '.rm-dock button.alt{background:#a8500c}',
     '.rm-dock button:hover{filter:brightness(1.1);padding-right:18px}',
     '.rm-dock .mini{width:30px;height:34px;flex-shrink:0}',
     '.rm-dock .mini svg{width:100%;height:100%}',
     '.rm-panel{position:fixed;right:16px;bottom:16px;width:400px;max-width:calc(100vw - 24px);height:646px;max-height:calc(100vh - 110px);background:#fff;border:1px solid #dce3ec;border-radius:16px;box-shadow:0 28px 72px rgba(7,51,111,.32);z-index:1000;display:flex;flex-direction:column;overflow:hidden}',
-    '.rm-head{background:linear-gradient(135deg,#07336f,#0b5ed7);color:#fff;padding:12px 14px;display:flex;align-items:center;gap:10px}',
+    '.rm-head{background:linear-gradient(135deg,#161e24,#0b5ed7);color:#fff;padding:12px 14px;display:flex;align-items:center;gap:10px}',
     '.rm-head .av{width:46px;height:46px;border-radius:14px;background:#fff;display:grid;place-items:center;overflow:hidden;flex-shrink:0}',
     '.rm-head .av svg{width:42px;height:auto}',
     '.rm-head b{font:700 1.02rem Inter,system-ui,sans-serif;display:block}',
@@ -80,27 +80,27 @@
     '.rm-head i::before{content:"";width:8px;height:8px;border-radius:50%;background:#2ee07a;box-shadow:0 0 0 0 rgba(46,224,122,.7);animation:rmled 2.2s ease-in-out infinite}',
     '.rm-head .call{margin-left:auto;background:#ffc233;color:#3a2b00;border:0;border-radius:8px;padding:8px 10px;font:700 .82rem Inter,system-ui,sans-serif;text-decoration:none}',
     '.rm-head .x{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:8px;padding:6px 9px;cursor:pointer;font-weight:700}',
-    '.rm-tape{height:5px;background:linear-gradient(90deg,#ef6c12,#ffc233,#0f7e74,#0b5ed7);}',
-    '.rm-prog{height:4px;background:#e7edf5}.rm-prog i{display:block;height:100%;width:0;background:#ef6c12;transition:width .35s}',
-    '.rm-body{flex:1;overflow-y:auto;padding:14px;background:#f4f7fb;font:1rem/1.55 Inter,system-ui,sans-serif;color:#122033}',
+    '.rm-tape{height:5px;background:linear-gradient(90deg,#a8500c,#ffc233,#0f7e74,#0b5ed7);}',
+    '.rm-prog{height:4px;background:#e7edf5}.rm-prog i{display:block;height:100%;width:0;background:#a8500c;transition:width .35s}',
+    '.rm-body{flex:1;overflow-y:auto;padding:14px;background:#faf7f2;font:1rem/1.55 Inter,system-ui,sans-serif;color:#161e24}',
     '.rm-msg{max-width:88%;padding:10px 13px;border-radius:14px;margin-bottom:10px;font-size:.95rem}',
     '.rm-msg.bot{background:#fff;border:1px solid #dce3ec;border-bottom-left-radius:4px}',
-    '.rm-msg.me{background:#07336f;color:#fff;margin-left:auto;border-bottom-right-radius:4px}',
+    '.rm-msg.me{background:#161e24;color:#fff;margin-left:auto;border-bottom-right-radius:4px}',
     '.rm-msg a{color:inherit}',
     '.rm-opts{display:flex;flex-wrap:wrap;gap:7px;padding:10px 14px;background:#fff;border-top:1px solid #dce3ec}',
-    '.rm-opt{background:#fff;border:1px solid #0a4fae;color:#0a4fae;border-radius:9px;padding:8px 11px;font:600 .88rem Inter,system-ui,sans-serif;cursor:pointer}',
-    '.rm-opt:hover{background:#0a4fae;color:#fff}',
-    '.rm-opt.hot{background:#ef6c12;border-color:#ef6c12;color:#fff}',
+    '.rm-opt{background:#fff;border:1px solid #243039;color:#243039;border-radius:9px;padding:8px 11px;font:600 .88rem Inter,system-ui,sans-serif;cursor:pointer}',
+    '.rm-opt:hover{background:#243039;color:#fff}',
+    '.rm-opt.hot{background:#a8500c;border-color:#a8500c;color:#fff}',
     '.rm-foot{display:flex;gap:7px;padding:10px 14px;border-top:1px solid #dce3ec;background:#fff}',
-    '.rm-foot input{flex:1;border:1px solid #dce3ec;border-radius:9px;padding:10px;font:1rem Inter,system-ui,sans-serif;background:#f4f7fb}',
+    '.rm-foot input{flex:1;border:1px solid #dce3ec;border-radius:9px;padding:10px;font:1rem Inter,system-ui,sans-serif;background:#faf7f2}',
     '.rm-foot button{background:#ffc233;border:0;border-radius:9px;padding:10px 14px;font-weight:700;color:#3a2b00;cursor:pointer}',
     '.rm-f{background:#fff;border:1px solid #dce3ec;border-radius:12px;padding:14px;margin-bottom:10px}',
-    '.rm-f label{display:block;font:600 .84rem Inter,system-ui,sans-serif;color:#122033;margin:9px 0 4px}',
-    '.rm-f input,.rm-f select,.rm-f textarea{width:100%;border:1px solid #dce3ec;border-radius:9px;padding:10px;font:1rem Inter,system-ui,sans-serif;background:#f4f7fb;color:#122033}',
+    '.rm-f label{display:block;font:600 .84rem Inter,system-ui,sans-serif;color:#161e24;margin:9px 0 4px}',
+    '.rm-f input,.rm-f select,.rm-f textarea{width:100%;border:1px solid #dce3ec;border-radius:9px;padding:10px;font:1rem Inter,system-ui,sans-serif;background:#faf7f2;color:#161e24}',
     '.rm-f .duo{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}',
-    '.rm-f button.go{width:100%;margin-top:12px;background:#ef6c12;color:#fff;border:0;border-radius:9px;padding:13px;font:700 1rem Inter,system-ui,sans-serif;cursor:pointer}',
+    '.rm-f button.go{width:100%;margin-top:12px;background:#a8500c;color:#fff;border:0;border-radius:9px;padding:13px;font:700 1rem Inter,system-ui,sans-serif;cursor:pointer}',
     '.rm-note{font-size:.8rem;color:#5d6b7e;margin-top:8px}',
-    '.rm-ticket{background:#07336f;color:#fff;border-radius:12px;padding:16px;margin-bottom:12px;font-family:Inter,system-ui,sans-serif}',
+    '.rm-ticket{background:#161e24;color:#fff;border-radius:12px;padding:16px;margin-bottom:12px;font-family:Inter,system-ui,sans-serif}',
     '.rm-ticket b{display:block;font-size:1.35rem;color:#ffc233;letter-spacing:.04em}',
     '.rm-ticket .ln{display:flex;justify-content:space-between;gap:10px;font-size:.86rem;padding:5px 0;border-bottom:1px dashed rgba(255,255,255,.26)}',
     '.rm-ticket .ln:last-of-type{border-bottom:0}',
@@ -177,36 +177,29 @@
   }
 
   /* ---------- knowledge base ---------- */
+  var SITE_ID = "paintersarvada.com", CITY = "Arvada";
   var KB = [
-    [/(cheaper|do better on price|better price|lower (the )?price|beat .*(price|quote|bid)|more of a discount|negotiat|price match)/i, 'Straight answer: the October discount is already built into the number you get, so there is not a second price hiding behind it. What we can move is scope or schedule. If budget is the constraint, we can phase the work, start with the sun-facing elevations that are actually failing, and come back for the rest.'],
-    [/\b(why (you|should)|what makes|different|better than|choose)\b/i, 'Four things, honestly. Crews that specialize by type of work instead of doing a bit of everything. Over 20 years of Colorado-specific experience, which mostly means knowing what fails here and why. A dedicated project manager so you have one person to call. And a 5-year workmanship warranty in writing, which only works because the preparation is real.'],
-    [/\b(twice|again|redo|do it over|short cut|shortcut|cheap (job|bid|quote))\b/i, 'The expensive version of this is doing it twice. A cheap job skips washing, scraping and priming, looks fine for a season, then fails. The second painter has to remove the failed coating before starting, so you pay for the first job, the removal and the correct job. That is the whole reason our prep is itemized in writing.'],
-    [/\b(prep|preparation|what.*included|scope|process)\b/i, 'On an exterior: protect the property, power wash, scrape and sand back to a sound edge, fill and caulk, prime what needs it, then the agreed coats on siding, trim, window and door casings, soffit and fascia. Then full cleanup and a walkthrough with you. Interiors follow the same logic indoors. All of it is itemized on your proposal.'],
-    [/\b(deposit|payment|financ|pay|invoice|down)\b/i, 'A deposit reserves your dates, commonly half, and the balance is due at completion after you walk the work with us. Terms are printed on the proposal, and the <a href="/terms/">terms page</a> spells out the rest.'],
-    [/\b(crew|who does|subcontract|employee|project manager)\b/i, 'Crews that specialize: exterior, interior, cabinets and commercial are not the same skill set. You also get a dedicated project manager, so there is one person accountable for your project rather than a rotating phone tree.'],
-    [/\b(proposal|contract|paperwork|sign|agreement|estimate in writing)\b/i, 'Everything goes in writing: surfaces, preparation steps, product line and sheen, coat counts, schedule, payment terms and the warranty. You can sign it electronically right on your phone, and a PDF copy lands in your inbox.'],
-    [/\b(schedule|book|dates|when can you start|availability)\b/i, 'Depends on the season and the crew. Interiors are usually easier to place; exterior calendars tighten from late spring through early fall. Tell me the project and your preferred week and I will get a real answer back to you rather than a guess.'],
-    [/\b(think about it|not ready|later|hold off)\b/i, 'Completely fair. Usually one specific thing is unresolved: price, timing, the crew, or whether the scope is right. Which one is it? I would rather answer it now than leave you guessing.'],
-    [/\b(cost|price|pricing|how much|rate|charge|expensive)\b/i, 'Published 2026 Front Range data puts exterior painting around <strong>$1.55 to $4.10 per square foot</strong>, interior around <strong>$1.50 to $3.50</strong>, and cabinets between <strong>$2,000 and $8,000</strong>. The <a href="/pricing/">pricing page</a> has a calculator, or I can run a quick quote with you right now.'],
-    [/\b(area|serve|cover|location|city|town|near me|where)\b/i, 'We covers the whole Front Range: Denver metro, the south metro through Castle Rock, Boulder County and Longmont, the I-25 towns, the eastern plains out to Fort Morgan, and the mountains from Evergreen to Breckenridge. Find yours on the <a href="/painters-near-me/">locations page</a>.'],
-    [/\b(mountain|breckenridge|frisco|dillon|silverthorne|evergreen|georgetown|idaho springs|altitude)\b/i, 'Yes, we paint the mountain towns. Higher elevation means harsher UV, a shorter season and more stain work, so those projects book earlier in the year. Tell me the town and I will tell you what the window looks like.'],
-    [/\b(warranty|guarantee)\b/i, 'Every project carries a <strong>5-year workmanship warranty</strong> in writing, plus the manufacturer warranty on the Sherwin-Williams, PPG or Behr coating. Details on the <a href="/warranty/">warranty page</a>.'],
-    [/\b(insur|licen|bonded)\b/i, 'Fully insured, with a certificate provided at the quote. Colorado issues no statewide painting license, so insurance and a written scope are what you should ask any painter to produce.'],
-    [/\b(discount|deal|offer|coupon|special|sale|25)\b/i, 'Right now: <strong>free estimates, virtual or in person</strong>. Labor only, paint and materials not included. See the <a href="/offers/">offer page</a>.'],
-    [/\b(peel|flak|bubbl|chalk|fail|crack|bad job|redo)\b/i, 'That is one of our most common calls. Peeling usually traces to moisture, contamination, incompatible layers or missing primer, and the fix depends on which. Send photos through the quick quote and we will tell you what we see.'],
-    [/\b(cabinet|kitchen)\b/i, 'Cabinets get degreased, scuff sanded, bonding primed and sprayed with a cabinet-grade finish. Typically $2,000 to $8,000 depending on door count. More on <a href="/cabinet-painting/">cabinet painting</a>.'],
-    [/\b(deck|fence|stain)\b/i, 'Decks and fences get cleaned, brightened, sanded where needed and sealed with products chosen for Colorado sun. More on <a href="/deck-staining/">deck and fence staining</a>.'],
-    [/\b(interior|inside|room|wall|ceiling|basement)\b/i, 'Interior work runs year-round: walls, ceilings, trim, doors and basements, everything protected with daily cleanup. See <a href="/interior-painting/">interior painting</a>.'],
-    [/\b(exterior|outside|siding|stucco|brick|trim)\b/i, 'Exteriors get washed, scraped, sanded, caulked and spot-primed before any finish coat. See <a href="/exterior-painting/">exterior painting</a>.'],
-    [/\b(commercial|office|retail|warehouse|tenant|property manager)\b/i, 'We handle offices, retail, warehouses, HOAs and multi-unit property, phased or after hours. See <a href="/commercial-painting/">commercial painting</a>.'],
-    [/\b(hoa|approval|covenant|architectural)\b/i, 'Most Front Range communities require exterior color approval. We pull the approved palette, prepare samples and handle the submission so the schedule holds.'],
-    [/\b(when|season|winter|cold|weather|spring|time of year)\b/i, 'Exteriors run best mid-May through early October down here. Denver averages its last spring freeze near May 5 and first fall freeze near October 7. Interiors run all year, and mountain seasons are shorter at both ends.'],
-    [/\b(how long|days|timeline|schedule|fast)\b/i, 'Most home exteriors take 3 to 5 working days, a few interior rooms 1 to 2 days, and cabinets 3 to 5 days because of cure time between coats.'],
-    [/\b(brand|sherwin|ppg|behr|product|paint type)\b/i, 'Sherwin-Williams, PPG and Behr, chosen by surface and exposure. The exact line and sheen are named in your written quote and never swapped afterward.'],
-    [/\b(lead|1978|old house|historic)\b/i, 'Homes built before 1978 may contain lead paint, and federal EPA rules require certified firms and lead-safe work practices when disturbing those surfaces. Tell us the year built and we plan for it.'],
-    [/\b(voc|smell|odor|pet|kid|safe|fume)\b/i, 'Most interior paints today are water-based and low in VOC, and Colorado tightened VOC limits in 2020. Zero-VOC options are available if anyone in the home is sensitive.'],
-    [/\b(human|person|talk|call|phone|speak)\b/i, 'Easiest way is to call <a href="tel:' + TEL + '">' + DISP + '</a>, or pick "call me back" and I will put you in the queue with a time window.'],
-    [/\b(who are you|about (you|the company|painter hotline)|company|us)\b/i, 'Painter Hotline is a Colorado painting company covering the Front Range from one number, 20+ years of experience, fully insured, 5-year workmanship warranty. More on the <a href="/about/">about page</a>.']
+    [/(cheaper|do better on price|better price|lower (the )?price|beat .*(price|quote|bid)|discount|negotiat|price match)/i, 'We price the work rather than running promotions, so there is no padded number waiting to come down. What can change is scope. On an Arvada exterior the honest lever is usually phasing: do the west and south elevations that are actually failing now, and plan the north and east for a later season.'],
+    [/\\b(hardboard|masonite|siding (swell|soft|rot|bad)|swollen|delaminat)\\b/i, 'That is the big one in ' + CITY + '. Homes built roughly 1968 to 1990 here mostly wear hardboard, and it swells wherever water reaches an unsealed cut edge, usually the bottom course or under a window. Painting over a swollen board does nothing and traps the moisture in. We count the failed sections at the estimate and write the number down. There is a full guide at <a href="/blog/hardboard-siding-arvada/">hardboard siding in Arvada</a>.'],
+    [/\\b(texture|knockdown|orange peel|skip trowel|popcorn|patch)\\b/i, 'Nearly every ' + CITY + ' interior is textured, so a repair has to be matched or it stays visible under every lamp in the room. We match knockdown, orange peel and skip trowel as part of interior work. One caution: if the house predates about 1980, popcorn ceiling texture should be tested before anyone disturbs it.'],
+    [/\\b(why (you|should)|what makes|different|better than|choose|best painter)\\b/i, 'We are based here, at 12191 W 64th Ave, not servicing ' + CITY + ' from somewhere else. Practically that means we know which neighborhoods have the hardboard problem, we know Candelas boards meet on a schedule, and we price the repair instead of quietly painting over it. 4.9 stars from 95 Google reviews, and a 5-year written warranty.'],
+    [/\\b(prep|preparation|what.*included|scope|process)\\b/i, 'Exterior: protect everything, pressure wash, scrape to a sound edge, repair and seal failed hardboard, sand transitions, fill and caulk, prime bare and repaired areas, then two finish coats on siding, trim, fascia and soffit. Interior: protect and cover, patch, match texture, caulk, spot prime, then two coats. Every step is itemized by surface on your estimate.'],
+    [/\\b(deposit|payment|financ|pay|invoice|down)\\b/i, 'A deposit reserves your dates and the balance is due at completion, after you walk the work with us. The terms are printed on your written estimate.'],
+    [/\\b(hoa|covenant|approval|board|palette|candelas|leyden|five parks)\\b/i, 'The newer west-side communities generally require color approval, including Candelas, Leyden Rock and Five Parks. We prepare the samples and the submission. The one thing we cannot speed up is the board meeting, so start early. More on the <a href="/candelas-painters/">Candelas page</a>.'],
+    [/\\b(lead|1978|old house|olde town|historic|asbestos)\\b/i, 'Homes built before 1978 may contain lead paint, and the federal EPA rule requires certified firms and lead-safe work practices when painted surfaces get disturbed. That covers most of Olde Town. See the <a href="/olde-town-arvada-painters/">Olde Town page</a> for how we handle it.'],
+    [/\\b(season|when can you|winter|spring|weather|cold|temperature)\\b/i, 'Exteriors here run roughly mid-May to early October. Denver-area records put the average last spring freeze near May 5 and the first fall freeze near October 7, and the number that matters is the overnight low because the coating cures through the night. Interiors we do year-round, and winter is genuinely the easier time to book.'],
+    [/\\b(cabinet|kitchen|oak|refinish)\\b/i, 'Cabinets get degreased, scuff sanded, bonding primed and sprayed, with doors done off-site and boxes in place behind containment. Published ranges put refinishing at roughly $2,000 to $8,000 against $15,000 or more to replace. A lot of ' + CITY + ' kitchens have solid 80s and 90s oak where only the color is dated. See <a href="/cabinet-painting-arvada/">cabinet painting</a>.'],
+    [/\\b(deck|fence|stain|seal)\\b/i, 'Pour a cup of water on the boards. If it beads, the seal is fine. If it soaks in and darkens, it is time. On our west-side exposure that is commonly every two to three years. We clean, brighten to restore the pH, sand where the grain raised, then seal. Details on <a href="/deck-and-fence-staining-arvada/">deck and fence staining</a>.'],
+    [/\\b(drywall|crack|nail pop|hole|water damage|repair)\\b/i, 'We repair nail pops, settlement cracks, holes and water damage, and we match the texture afterward so the patch disappears. Doing the repair and the paint together is the point, because a repair is not finished until it is textured, primed and coated. See <a href="/drywall-repair-and-texture-arvada/">drywall repair and texture</a>.'],
+    [/\\b(warranty|guarantee|if it fails|peel)\\b/i, 'Five years on workmanship, in writing, with the exclusions actually printed. It covers peeling, flaking and adhesion failure from our prep or application. It does not cover normal UV fading or substrate we flagged that you chose not to repair. Full detail on the <a href="/warranty/">warranty page</a>.'],
+    [/\\b(insur|licen|bonded|certificate)\\b/i, 'Insured, with the certificate provided at the estimate. Colorado does not issue a statewide painting license, so insurance and a written scope are the two documents that actually protect you.'],
+    [/\\b(brand|sherwin|ppg|benjamin|what paint)\\b/i, 'Sherwin-Williams and PPG. The exact line and sheen are named per surface on your estimate so you can look up the manufacturer data yourself.'],
+    [/\\b(sheen|flat|eggshell|satin|gloss)\\b/i, 'Flat on ceilings, eggshell on most walls, satin in kitchens, baths, hallways and basements, semi-gloss on trim and doors. On textured ' + CITY + ' walls we tend to go one step lower than you might elsewhere, because sheen lights up every bump. There is a full guide at <a href="/blog/interior-paint-sheen-guide-arvada/">which sheen goes where</a>.'],
+    [/\\b(west wall|sun|fade|chalk|uv|one side)\\b/i, 'West and south elevations take the afternoon sun straight off the foothills, and they commonly fail a full cycle before the north and east sides. If chalk comes off on your hand, that coating is done. You can absolutely repaint just those elevations. <a href="/blog/why-west-walls-fail-first-arvada/">Here is why it happens</a>.'],
+    [/\\b(how long|how many days|timeline|take)\\b/i, 'A single interior room is usually one day. A full exterior runs three to five working days, longer if there is real hardboard repair. Cabinets are three to five days on site. Your estimate gives you the actual schedule rather than a guess.'],
+    [/\\b(area|serve|lakewood|wheat ridge|golden|westminster|broomfield|thornton|northglenn)\\b/i, 'We are based in ' + CITY + ' and also work in Westminster, Broomfield, Northglenn and Thornton. For Lakewood, Wheat Ridge and Golden, Bighorn has dedicated sites for each of those cities with local detail. Same crews either way.'],
+    [/\\b(think about it|get back to you|need time|compare|other (bid|quote))\\b/i, 'Take the time, and compare on four lines rather than the total: the preparation included, whether failed siding is counted or ignored, the exact product and coat count, and the warranty terms. A lower number is nearly always one of those being smaller.'],
+    [/\\b(estimate|quote|price|cost|how much)\\b/i, 'Free, in person or from photos. Published 2026 Front Range data puts exteriors at roughly $1.55 to $4.10 per square foot and interiors at about $1.50 to $3.50. On ' + CITY + ' homes, siding repair is the thing most likely to move your number. Full breakdown on the <a href="/painting-cost-arvada/">cost page</a>.'],
   ];
 
   function lookup(t) { for (var i = 0; i < KB.length; i++) if (KB[i][0].test(t)) return KB[i][1]; return null; }
