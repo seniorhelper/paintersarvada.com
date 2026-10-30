@@ -1,2 +1,1 @@
-# paintersarvada.com
-paintersarvada.com
+Static site.
